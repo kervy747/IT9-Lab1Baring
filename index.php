@@ -15,10 +15,11 @@ $revenue = $revRow['s'];
   <title>Dashboard</title>
   <link rel="stylesheet" href="styles/nav_styles.css">
   <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/dashboard.css">
 </head>
 <body>
 <?php include "nav.php"; ?>
-  <div>
+  <div class="container">
     <h2>Dashboard</h2>
  
     <ul>
