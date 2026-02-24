@@ -20,20 +20,27 @@ $revenue = $revRow['s'];
 <body>
 <?php include "nav.php"; ?>
   <div class="container">
-    <h2>Dashboard</h2>
- 
-    <ul>
-      <li>Total Clients: <b><?php echo $clients; ?></b></li>
-      <li>Total Services: <b><?php echo $services; ?></b></li>
-      <li>Total Bookings: <b><?php echo $bookings; ?></b></li>
-      <li>Total Revenue: <b>₱<?php echo number_format($revenue,2); ?></b></li>
-    </ul>
-    
-    <p>
-      Quick links:
-      <a href="/assessment_beginner/pages/clients_add.php">Add Client</a> |
-      <a href="/assessment_beginner/pages/bookings_create.php">Create Booking</a>
-    </p>
+      <div>
+        <h2>Dashboard</h2>
+      </div>
+      <div class="list">
+         <ul>
+            <li>Total Clients: <b><?php echo $clients; ?></b></li>
+            <li>Total Services: <b><?php echo $services; ?></b></li>
+            <li>Total Bookings: <b><?php echo $bookings; ?></b></li>
+            <li>Total Revenue: <b>₱<?php echo number_format($revenue,2); ?></b></li>
+         </ul>
+      </div>
+
+      <hr>
+      
+      <div>
+        <p>
+          Quick links:
+          <a href="/assessment_beginner/pages/clients_add.php">Add Client</a> |
+          <a href="/assessment_beginner/pages/bookings_create.php">Create Booking</a>
+        </p>
+      </div>
    </div>
 </body>
 </html>
