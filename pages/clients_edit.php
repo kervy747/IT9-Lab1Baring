@@ -28,11 +28,12 @@ if (isset($_POST['update'])) {
 ?>
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8"><title>Edit Client</title>
-  <link rel="stylesheet" href="../styles/nav_styles.css">
-  <link rel="stylesheet" href="../styles/general.css">
-</head>
+  <head>
+    <meta charset="utf-8"><title>Edit Client</title>
+    <link rel="stylesheet" href="../styles/nav_styles.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../table.css">
+  </head>
 <body>
 <?php include "../nav.php"; ?>
  

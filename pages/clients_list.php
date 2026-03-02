@@ -4,18 +4,19 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id DESC");
 ?>
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8"><title>Clients</title>
-  <link rel="stylesheet" href="../styles/nav_styles.css">
-  <link rel="stylesheet" href="../styles/general.css">
-</head>
+  <head>
+    <meta charset="utf-8"><title>Clients</title>
+    <link rel="stylesheet" href="../styles/nav_styles.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../table.css">
+  </head>
 <body>
 <?php include "../nav.php"; ?>
  
 <h2>Clients</h2>
 <p><a href="clients_add.php">+ Add Client</a></p>
  
-<table border="1" cellpadding="8">
+<table class="mainTable">
   <tr>
     <th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Action</th>
   </tr>

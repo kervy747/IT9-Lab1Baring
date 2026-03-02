@@ -22,9 +22,11 @@ if (isset($_POST['update'])) {
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8"><title>Edit Service</title>
+    <meta charset="utf-8">
+    <title>Edit Service</title>
     <link rel="stylesheet" href="../styles/nav_styles.css">
     <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../table.css">
 </head>
 <body>
 <?php include "../nav.php"; ?>
