@@ -31,7 +31,7 @@ if (isset($_POST['save'])) {
     <title>Add Service</title>
     <link rel="stylesheet" href="../styles/nav_styles.css">
     <link rel="stylesheet" href="../styles/general.css">
-    <link rel="stylesheet" href="../table.cs
+    <link rel="stylesheet" href="../table.css">
 </head>
 <body>
 <?php include "../nav.php"; ?>

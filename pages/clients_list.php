@@ -8,7 +8,7 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id DESC");
     <meta charset="utf-8"><title>Clients</title>
     <link rel="stylesheet" href="../styles/nav_styles.css">
     <link rel="stylesheet" href="../styles/general.css">
-    <link rel="stylesheet" href="../table.css">
+    <link rel="stylesheet" href="../styles/table_style.css">
   </head>
 <body>
 <?php include "../nav.php"; ?>

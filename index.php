@@ -33,8 +33,8 @@ $revenue = $revRow['s'];
       </div>
 
       <hr>
-      
-      <div>
+
+      <div class="quickLink">
         <p>
           Quick links:
           <a href="/assessment_beginner/pages/clients_add.php">Add Client</a> |

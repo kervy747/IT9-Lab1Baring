@@ -1,6 +1,6 @@
 <?php
 include "../db.php";
- 
+  
  
 /* ============================
    SOFT DELETE (Deactivate)
@@ -21,7 +21,7 @@ if (isset($_GET['delete_id'])) {
 /* ============================
    FETCH ALL SERVICES
    ============================ */
-$result = mysqli_query($conn, "SELECT * FROM services ORDER BY service_id DESC");
+$result = mysqli_query($conn, "SELECT * FROM      ORDER BY service_id DESC");
 ?>
  
 <!doctype html>
@@ -31,7 +31,7 @@ $result = mysqli_query($conn, "SELECT * FROM services ORDER BY service_id DESC")
     <title>Services</title>
     <link rel="stylesheet" href="../styles/nav_styles.css">
     <link rel="stylesheet" href="../styles/general.css">
-    <link rel="stylesheet" href="../table.css">
+    <link rel="stylesheet" href="../styles/table_style.css">
   </head>
   <body>    
     <?php include "../nav.php"; ?>
