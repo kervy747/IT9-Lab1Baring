@@ -9,7 +9,6 @@ if (isset($_POST['save'])) {
     $hourly_rate = $_POST['hourly_rate'];
     $is_active = $_POST['is_active'];
 
-    // simple validation
     if ($service_name == "" || $hourly_rate == "") {
         $message = "Service name and hourly rate are required!";
     } else if (!is_numeric($hourly_rate) || $hourly_rate <= 0) {
@@ -31,15 +30,16 @@ if (isset($_POST['save'])) {
     <title>Add Service</title>
     <link rel="stylesheet" href="../styles/nav_styles.css">
     <link rel="stylesheet" href="../styles/general.css">
-    <link rel="stylesheet" href="../table.css">
+    <link rel="stylesheet" href="../styles/table_style.css"> <!-- fixed: was table.css -->
 </head>
 <body>
 <?php include "../nav.php"; ?>
 
-<h2>Add Service</h2>
-<p style="color:red;"><?php echo $message; ?></p>
+<div class="container">
+  <h2>Add Service</h2>
+  <p style="color:red;"><?php echo $message; ?></p>
 
-<form method="post">
+  <form method="post">
     <label>Service Name*</label><br>
     <input type="text" name="service_name"><br><br>
 
@@ -56,7 +56,8 @@ if (isset($_POST['save'])) {
     </select><br><br>
 
     <button type="submit" name="save">Save Service</button>
-</form>
+  </form>
+</div>
 
 </body>
 </html>

@@ -1,0 +1,86 @@
+/* booking_style.css - used only for booking pages */
+
+.bookingForm {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px #ADD7CC;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.bookingForm label {
+    font-weight: bold;
+    color: #31485D;
+}
+
+.bookingForm input,
+.bookingForm select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ADD7CC;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #31485D;
+    box-sizing: border-box;
+}
+
+.bookingForm input:focus,
+.bookingForm select:focus {
+    outline: none;
+    border-color: #608672;
+}
+
+.bookingForm button {
+    background-color: #608672;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.bookingForm button:hover {
+    background-color: #31485D;
+}
+
+.pageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.pageHeader a {
+    background-color: #608672;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.1s;
+}
+
+.pageHeader a:hover {
+    background-color: #31485D;
+}
+
+/* Status badge colors */
+.status-pending {
+    color: #b07800;
+    font-weight: bold;
+}
+
+.status-paid {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.status-cancelled {
+    color: #c62828;
+    font-weight: bold;
+}
