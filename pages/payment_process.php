@@ -1,4 +1,3 @@
-
 <?php
 include "../config/db.php";
  
@@ -56,38 +55,43 @@ if (isset($_POST['pay'])) {
 ?>
 <!doctype html>
 <html>
-<head><meta charset="utf-8"><title>Process Payment</title></head>
+<head>
+  <meta charset="utf-8">
+  <title>Process Payment</title>
+  <link rel="stylesheet" href="../styles/nav_styles.css">
+  <link rel="stylesheet" href="../styles/general.css">
+  <link rel="stylesheet" href="../styles/payment_style.css">
+</head>
 <body>
 <?php include "../components/nav.php"; ?>
+
+<div class="container">
+  <h2>Process Payment (Booking #<?php echo $booking_id; ?>)</h2>
+
+  <div class="paymentInfo">
+    <p>Total Cost: ₱<?php echo number_format($booking['total_cost'],2); ?></p>
+    <p>Total Paid: ₱<?php echo number_format($total_paid,2); ?></p>
+    <p class="balance">Balance: ₱<?php echo number_format($balance,2); ?></p>
+  </div>
+
+  <p class="errorMsg"><?php echo $message; ?></p>
+
+  <div class="paymentForm">
+    <form method="post">
+      <label>Amount Paid</label><br>
+      <input type="number" name="amount_paid" step="0.01">
  
+      <label>Method</label><br>
+      <select name="method">
+        <option value="CASH">CASH</option>
+        <option value="GCASH">GCASH</option>
+        <option value="CARD">CARD</option>
+      </select>
  
-<h2>Process Payment (Booking #<?php echo $booking_id; ?>)</h2>
- 
- 
-<p>Total Cost: ₱<?php echo number_format($booking['total_cost'],2); ?></p>
-<p>Total Paid: ₱<?php echo number_format($total_paid,2); ?></p>
-<p><b>Balance: ₱<?php echo number_format($balance,2); ?></b></p>
- 
- 
-<p style="color:red;"><?php echo $message; ?></p>
- 
- 
-<form method="post">
-  <label>Amount Paid</label><br>
-  <input type="number" name="amount_paid" step="0.01"><br><br>
- 
- 
-  <label>Method</label><br>
-  <select name="method">
-    <option value="CASH">CASH</option>
-    <option value="GCASH">GCASH</option>
-    <option value="CARD">CARD</option>
-  </select><br><br>
- 
- 
-  <button type="submit" name="pay">Save Payment</button>
-</form>
- 
- 
+      <button type="submit" name="pay">Save Payment</button>
+    </form>
+  </div>
+</div>
+
 </body>
 </html>
